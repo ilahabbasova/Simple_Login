@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #f7b731, #1e90ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 500px;
+    background: linear-gradient(to right, #eeab1c, #0e65bd);
+    border-radius: 15px;
+    opacity: 0.9;
+    
+}
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 20px 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+form {
+    padding: 30px;
+    
+}
+
+/* Əsas düzülüş */
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* 1, 4, 5 tam sətir tutsun */
+.form-container input:nth-child(1),
+.form-container input:nth-child(4),
+.form-container input:nth-child(5) {
+    flex: 0 0 100%;
+}
+
+/* 2 və 3 yan-yana */
+.form-container input:nth-child(2),
+.form-container input:nth-child(3) {
+    flex: 1 1 calc(50% - 5px);
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(30, 144, 255, 0.7));
+    
+    
+}
+.button{
+    background-color: #557987;
+    color: #0d0c0c;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: #fff;
+}
+.button:hover{
+      background-color: #999c2f;
+      color: white;
+      cursor: pointer;
+}
